@@ -5,14 +5,20 @@ import SignupPage from "../Pages/Signup";
 import Login from "../Pages/Login";
 import Home from "../Pages/Home";
 import CreatePost from "../Component/CreatePost";
+import BlogPoster from "../Component/BlogPoster.jsx";
+
 
 const AppRoutes = [
+    {
+        path:'/',
+        element: <BlogPoster />
+    },
     {
         path:'/signup',
         element: <SignupPage />
     },
     {
-        path:'/',
+        path:'/login',
         element: <Login />
     },
     {
