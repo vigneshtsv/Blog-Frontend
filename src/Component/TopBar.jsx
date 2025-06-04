@@ -254,7 +254,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Search, Menu, X, User, LogOut, Sparkles } from "lucide-react";
-import useLogout from "./UseLogout";
+import useLogout from "../Component/useLogout";
 import { toast } from "react-toastify";
 
 const Topbar = () => {
