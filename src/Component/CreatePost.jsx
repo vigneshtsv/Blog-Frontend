@@ -34,7 +34,7 @@ export default function CreatePost() {
 
     try {
       const response = await fetch(
-        "https://blog-backend-lo51.onrender.com/api/post/createpost",
+        "https://blog-backend-nicl.onrender.com/api/post/createpost",
         {
           method: "POST",
           headers: {

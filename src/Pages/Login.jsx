@@ -271,7 +271,7 @@ const Login = () => {
     try {
       // Simulate API call for demo purposes
       const response = await fetch(
-        "https://blog-backend-lo51.onrender.com/api/auth/loginuser",
+        "https://blog-backend-nicl.onrender.com/api/auth/loginuser",
         {
           method: "POST",
           headers: {

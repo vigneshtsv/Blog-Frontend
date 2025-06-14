@@ -686,7 +686,7 @@ const Home = () => {
     if (window.confirm("Are you sure you want to delete this post?")) {
       try {
         const response = await fetch(
-          `https://blog-backend-lo51.onrender.com/api/post/deletepost/${postId}`,
+          `https://blog-backend-nicl.onrender.com/api/post/deletepost/${postId}`,
           {
             method: "DELETE",
             headers: {

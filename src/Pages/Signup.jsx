@@ -90,7 +90,7 @@ export default function Signup() {
     try {
       // Make API request using fetch instead of axios
       const response = await fetch(
-        "https://blog-backend-lo51.onrender.com/api/auth/registeruser",
+        "https://blog-backend-nicl.onrender.com/api/auth/registeruser",
         {
           method: "POST",
           headers: {
