@@ -577,7 +577,7 @@ const Home = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        "https://blog-backend-lo51.onrender.com/api/post/getallpost"
+        "https://blog-backend-nicl.onrender.com/api/post/getallpost"
       );
 
       if (!response.ok) {
@@ -634,7 +634,7 @@ const Home = () => {
     try {
       setUpdateLoading(true);
       const response = await fetch(
-        `https://blog-backend-lo51.onrender.com/api/post/updatepost/${currentPost._id}`,
+        `https://blog-backend-nicl.onrender.com/api/post/updatepost/${currentPost._id}`,
         {
           method: "PUT",
           headers: {

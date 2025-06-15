@@ -105,7 +105,8 @@ export default function Signup() {
       );
 
       const data = await response.json();
-
+      console.log(data);
+      
       if (!response.ok) {
         throw new Error(data.error || "Registration failed");
       }
@@ -174,7 +175,7 @@ export default function Signup() {
               </div>
             </div>
           ) : (
-            <div className="space-y-6" onSubmit={handleSubmit}>
+            <form className="space-y-6" onSubmit={handleSubmit}>
               {apiError && (
                 <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
                   <div className="flex items-center">
@@ -284,6 +285,8 @@ export default function Signup() {
               <div>
                 <label
                   htmlFor="confirmPassword"
+                  id="confirmPassword"
+                  value={formData.confirmPassword}
                   className="block text-sm font-medium text-gray-700"
                 >
                   Confirm Password
@@ -329,7 +332,7 @@ export default function Signup() {
 
               <div>
                 <button
-                  onClick={handleSubmit}
+                  type="submit"
                   disabled={loading}
                   className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 shadow-lg transition-all duration-300"
                 >
@@ -359,7 +362,7 @@ export default function Signup() {
                   )}
                 </button>
               </div>
-            </div>
+            </form>
           )}
 
           <div className="mt-6">

@@ -279,8 +279,8 @@ import {
   Globe,
   Users,
 } from "lucide-react";
-import Topbar from "./TopBar";
 import { useNavigate } from "react-router-dom";
+import Topbar from "./TopBar";
 
 export default function BlogPoster() {
   const [typedText, setTypedText] = useState("");
@@ -295,7 +295,6 @@ export default function BlogPoster() {
     "Dream Projects",
   ];
 
-  // ✅ Fixed - These functions now just return functions, not call navigate immediately
   const handleLogin = () => {
     navigate("/login");
   };

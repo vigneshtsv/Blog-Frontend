@@ -261,7 +261,7 @@ const Topbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [authentication, setAuthentication] = useState(false);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState([]);
   const [isScrolled, setIsScrolled] = useState(false);
   const logout = useLogout();
 
@@ -407,7 +407,7 @@ const Topbar = () => {
                         <p className="text-sm font-semibold text-gray-800">
                           Welcome back!
                         </p>
-                        <p className="text-xs text-gray-500">{user}</p>
+                        <p className="text-xs text-gray-500">{user?.username}</p>
                       </div>
                       <a
                         href="#"
