@@ -7,7 +7,9 @@ export default function App() {
   const router = createBrowserRouter(AppRoutes)
   return (
     <div>
-      <RouterProvider router={router} />
+      <RouterProvider router={router} future={{v7_startTransition: true,}}/>
     </div>
   )
 }
+
+
